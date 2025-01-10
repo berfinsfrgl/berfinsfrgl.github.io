@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>Oyun Kütüphanesi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BUNNY GAMES</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="404.html">Hakkımızda</a></li>
+        <li><a href="404.html">Bilgiler</a></li>
+        <li><a href="404.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div class="banner">
+    <div class="slide">
+      <img src="images/banner1.jpg" alt="Banner 1">
+    </div>
+    <div class="slide">
+      <img src="images/banner2.jpg" alt="Banner 2">
+    </div>
+    <div class="slide">
+      <img src="images/banner3.jpg" alt="Banner 3">
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <main>
+    <h1>Oyun Kütüphanesi</h1>
+
+    <!-- Kategori Seçimi -->
+    <div class="categories">
+      <button onclick="filterGames('Hepsi')">Hepsi</button>
+      <button onclick="filterGames('Aksiyon')">Aksiyon</button>
+      <button onclick="filterGames('Macera')">Macera</button>
+      <button onclick="filterGames('RPG')">RPG</button>
+      <button onclick="filterGames('FPS')">FPS</button>
+      <button onclick="filterGames('Bulmaca')">Bulmaca</button>
+      <button onclick="filterGames('Korku')">Korku</button>
+      <button onclick="filterGames('Spor')">Spor</button>
+      <button onclick="filterGames('Simülasyon')">Simülasyon</button>
+      <button onclick="filterGames('Yarış')">Yarış</button>
+      <button onclick="filterGames('Eğlence')">Eğlence</button>
+      <button onclick="filterGames('Survival')">Survival</button>
+    </div>
+
+    <!-- Oyunlar Grid -->
+    <div class="game-grid" id="gameGrid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe id="modalVideo" src="" frameborder="0" allowfullscreen></iframe>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>     
+      <a id="buyLink" href="#" target="_blank"><button class="buy-btn">Satın Al</button></a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <table>
+      <tr>
+        <td>© 2024 Tüm Hakları Saklıdır.</td>
+        <td>Oyun Kütüphanesi</td>
+      </tr>
+    </table>
+  </footer>
+
+  <script src="slider.js"></script>
+  <script src="games.js"></script>
+</body>
+</html>
