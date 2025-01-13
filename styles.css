@@ -220,6 +220,24 @@ main {
   background-color: #8faecd;
 }
 
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #172e45;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.buy-btn:hover {
+  background-color: #8faecd;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -252,6 +270,29 @@ footer table {
 footer table td {
   padding: 5px 15px;
   color: white;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #222;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: 20px 0;
+  border: 0;
+  border-radius: 10px;
 }
 
 /* Medya Sorguları (Responsive) */
@@ -288,6 +329,14 @@ footer table td {
 
   footer table td {
     padding: 5px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  p {
+    font-size: 1em;
   }
 }
 
