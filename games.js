@@ -253,15 +253,15 @@ const games = [
     buyLink: "https://www.thelastofus.playstation.com/"
   },
   {
-    title: "Ico",
-    category: "Aksiyon, Bulmaca",
-    image: "images/oyunlar/ico.jpg",
-    videoUrl: "https://www.youtube.com/embed/8g1g1g1g1g1g",
-    description: "Gizemli bir kalede geçen sanatsal bir macera.",
-    releaseDate: "24 Eylül 2001",
-    developer: "Team Ico",
-    platform: "PlayStation 2, PlayStation 3",
-    buyLink: "https://www.playstation.com/en-us/games/ico/"
+    title: "League of Legends",
+    category: "RPG",
+    image: "images/oyunlar/lol.jpg",
+    videoUrl: "https://www.youtube.com/embed/32bqVu8e64k",
+    description: "League of Legends, oyuncuların stratejik takım savaşlarında şampiyonlarını seçerek rakip üssünü yok etmeye çalıştığı, dünyanın en popüler oyunlarından biridir.",
+    releaseDate: "27 Ekim 2009",
+    developer: "Riot Games",
+    platform: "PC, macOS",
+    buyLink: "https://www.leagueoflegends.com"
   },
   {
     title: "Left 4 Dead",
