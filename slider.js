@@ -17,4 +17,4 @@ function prevSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000); // 3 saniyede bir geçiş
+setInterval(nextSlide, 5000); 
