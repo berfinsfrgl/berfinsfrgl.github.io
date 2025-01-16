@@ -168,7 +168,7 @@ const games = [
     title: "The Sims",
     category: "Simülasyon",
     image: "images/oyunlar/thesims.jpg",
-    videoUrl: "https://www.youtube.com/embed/8g1g1g1g1g1g",
+    videoUrl: "https://www.youtube.com/embed/GJENRAB4ykA",
     description: "Hayat simülasyonu oyunu, kendi karakterlerinizi yaratın ve yönetin.",
     releaseDate: "4 Şubat 2000",
     developer: "Maxis",
@@ -244,7 +244,7 @@ const games = [
   {
     title: "The Last of Us",
     category: "Aksiyon, Macera",
-    image: "images/oyunlar/ thelastofus.jpg",
+    image: "images/oyunlar/thelastofus.jpg",
     videoUrl: "https://www.youtube.com/embed/8g1g1g1g1g1g",
     description: "Kıyamet sonrası bir dünyada hayatta kalma mücadelesi.",
     releaseDate: "14 Haziran 2013",
@@ -496,10 +496,9 @@ const games = [
   }
 ];
 
-// Oyunları Göster
 function displayGames(filteredGames) {
   const gameGrid = document.getElementById("gameGrid");
-  gameGrid.innerHTML = ""; // Mevcut oyunları temizle
+  gameGrid.innerHTML = "";
   filteredGames.forEach(game => {
     const gameCard = document.createElement("div");
     gameCard.className = "game-card";
@@ -513,18 +512,15 @@ function displayGames(filteredGames) {
   });
 }
 
-// Kategorilere Göre Filtreleme
 function filterGames(category) {
   if (category === "Hepsi") {
-    displayGames(games); // Tüm oyunları göster
+    displayGames(games);
   } else {
     const filteredGames = games.filter(game => game.category.includes(category));
-    displayGames(filteredGames); // Filtrelenmiş oyunları göster
+    displayGames(filteredGames);
   }
 }
 
-
-// Modal Açma
 function openModal(game) {
   document.getElementById("modalTitle").textContent = game.title;
   document.getElementById("modalVideo").src = game.videoUrl;
@@ -542,27 +538,22 @@ function openModal(game) {
   document.getElementById("buyLink").href = game.buyLink;
   document.getElementById("gameModal").style.display = "flex";
 
-  // Sayfanın kaydırılmasını devre dışı bırak
   document.body.classList.add("no-scroll");
 }
 
-// Modal Kapama
 function closeModal() {
   document.getElementById("modalVideo").src = "";
   document.getElementById("gameModal").style.display = "none";
 
-  // Sayfanın kaydırılmasını etkinleştir
   document.body.classList.remove("no-scroll");
 }
 
-// Klavye Kontrolü (ESC ile Modal Kapatma)
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
   }
 });
 
-// Sayfa Yüklendiğinde Varsayılan Oyunları Göster
 document.addEventListener("DOMContentLoaded", () => {
-  displayGames(games); // Tüm oyunlar varsayılan olarak listelenir
+  displayGames(games);
 });
