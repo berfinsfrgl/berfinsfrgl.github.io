@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>Oyun Kütüphanesi</title>
   <link rel="stylesheet" href="styles.css">
@@ -13,9 +12,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Anasayfa</a></li>
-        <li><a href="404.html">Hakkımızda</a></li>
-        <li><a href="404.html">Bilgiler</a></li>
-        <li><a href="404.html">İletişim</a></li>
+        <li><a href="bilgilendirme.html">Bilgilendirme</a></li>
       </ul>
     </nav>
   </header>
@@ -60,11 +57,9 @@
       <button onclick="filterGames('Survival')">Survival</button>
     </div>
 
-    <!-- Oyunlar Grid -->
     <div class="game-grid" id="gameGrid"></div>
   </main>
 
-  <!-- Modal -->
   <div id="gameModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -75,14 +70,13 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     <table>
       <tr>
-        <td>© 2024 Tüm Hakları Saklıdır. Bunny Games</td>
+        <td>© 2024 Tüm Hakları Saklıdır. <a href="https://www.bunnygames.com">Bunny Games</a></td>
       </tr>
     </table>
-  </footer>
+  </footer>  
 
   <script src="slider.js"></script>
   <script src="games.js"></script>
